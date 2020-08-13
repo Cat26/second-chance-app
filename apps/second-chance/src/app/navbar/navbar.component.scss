@@ -1,0 +1,25 @@
+@font-face {
+  font-family: titleFont;
+  src: url("../../assets/font/Black_And_White_Picture/BlackAndWhitePicture-Regular.ttf") format('truetype');
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  font-size: 28px;
+
+  .nav-icon {
+    height: 50px;
+  }
+
+  li {
+    margin-right: 20px;
+  }
+}
+
+.navbar-brand {
+  font-family: titleFont, sans-serf;
+  font-size: 68px;
+  margin-right: 182px;
+}

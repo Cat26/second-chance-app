@@ -25,8 +25,14 @@
               "apps/second-chance/src/favicon.ico",
               "apps/second-chance/src/assets"
             ],
-            "styles": ["apps/second-chance/src/styles.scss"],
-            "scripts": []
+            "styles": [
+              "apps/second-chance/src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+            ],
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
