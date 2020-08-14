@@ -1,0 +1,21 @@
+fa-icon {
+  display: block;
+  color: green;
+  margin: 15px;
+  text-align: center;
+}
+
+#side-menu {
+  position: fixed;
+  top: 150px;
+
+  div {
+    background: #8080802e;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
