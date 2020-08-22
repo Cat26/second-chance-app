@@ -3,16 +3,16 @@
   src: url("../../assets/font/Black_And_White_Picture/BlackAndWhitePicture-Regular.ttf") format('truetype');
 }
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   font-size: 16px;
 
   fa-icon {
     display: block;
-    font-size: 53px;
+    font-size: 46px;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+      text-align: left;
+    }
   }
 }
 
@@ -23,5 +23,46 @@ nav {
 
   @media screen and (max-width: 767px) {
     font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .profile {
+    display: none;
+  }
+}
+
+.navbar-toggler {
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+}
+
+#second-chance-logo {
+  img {
+    z-index: 1040;
+    height: 500px;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+  }
+
+  .logo-on-collapse {
+    background: white;
+    padding: 3px;
+    border-top-left-radius: 41px;
+    border-bottom-right-radius: 32px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    img {
+      height: 268px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    img {
+      height: 104px;
+      top: 118px;
+    }
   }
 }

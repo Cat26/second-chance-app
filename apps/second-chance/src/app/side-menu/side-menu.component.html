@@ -1,17 +1,17 @@
 <div id="side-menu">
-  <div>
-    <fa-icon [icon]="faHome" class="fa-3x"></fa-icon>
+  <div (mouseenter)="visibleElement = 1" (mouseleave)="visibleElement = 0" [ngClass]="{'side-menu-desc_visible': visibleElement === 1}">
+    <fa-icon [icon]="faHome" class="fa-3x"></fa-icon><span *ngIf="visibleElement === 1" [@enterDisplayAnimation] [@enterOpacityAnimation]>Home</span>
   </div>
-  <div>
-    <fa-icon [icon]="faUser" class="fa-3x"></fa-icon>
+  <div (mouseenter)="visibleElement = 2" (mouseleave)="visibleElement = 0" [ngClass]="{'side-menu-desc_visible': visibleElement === 2}">
+    <fa-icon [icon]="faUser" class="fa-3x"></fa-icon><span *ngIf="visibleElement === 2" [@enterDisplayAnimation] [@enterOpacityAnimation]>Sign In</span>
   </div>
-  <div>
-    <fa-icon [icon]="faRecycle" class="fa-3x"></fa-icon>
+  <div (mouseenter)="visibleElement = 3" (mouseleave)="visibleElement = 0" [ngClass]="{'side-menu-desc_visible': visibleElement === 3}">
+    <fa-icon [icon]="faRecycle" class="fa-3x"></fa-icon><span *ngIf="visibleElement === 3" [@enterDisplayAnimation] [@enterOpacityAnimation]>Events</span>
   </div>
-  <div>
-    <fa-icon [icon]="faTrophy" class="fa-3x"></fa-icon>
+  <div (mouseenter)="visibleElement = 4" (mouseleave)="visibleElement = 0" [ngClass]="{'side-menu-desc_visible': visibleElement === 4}">
+    <fa-icon [icon]="faTrophy" class="fa-3x"></fa-icon><span *ngIf="visibleElement === 4" [@enterDisplayAnimation] [@enterOpacityAnimation]>Goals</span>
   </div>
-  <div>
-    <fa-icon [icon]="faTree" class="fa-3x"></fa-icon>
+  <div (mouseenter)="visibleElement = 5" (mouseleave)="visibleElement = 0" [ngClass]="{'side-menu-desc_visible': visibleElement === 5}">
+    <fa-icon [icon]="faTree" class="fa-3x"></fa-icon><span *ngIf="visibleElement === 5" [@enterDisplayAnimation] [@enterOpacityAnimation]>Shops</span>
   </div>
 </div>

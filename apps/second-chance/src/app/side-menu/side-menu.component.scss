@@ -1,5 +1,4 @@
 fa-icon {
-  display: block;
   color: green;
   margin: 15px;
   text-align: center;
@@ -13,9 +12,35 @@ fa-icon {
     background: #8080802e;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
+    margin: 20px 0;
+    width: 80px;
+    text-align: center;
+    transition: width 0.5s;
+
+    fa-icon {
+      font-size: 40px;
+    }
+
+    span {
+      font-size: 50px;
+      font-size: 25px;
+      font-weight: bold;
+      color: #676263;
+      margin: auto 10px;
+      vertical-align: super;
+    }
+  }
+
+  .side-menu-desc_visible {
+    width: 200px;
+
+    @media screen and (max-width: 768px) {
+      width: 190px;
+    }
   }
 
   @media screen and (max-width: 767px) {
     display: none;
   }
 }
+
