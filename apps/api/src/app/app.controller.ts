@@ -8,8 +8,8 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get('hello')
-  getData(): Message {
+  @Get()
+  getData(): string {
     return this.appService.getData();
   }
 }
